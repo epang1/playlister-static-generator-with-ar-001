@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genre Index</title>
+  </head>
+  <body>
+    Genres: <br>
+      <% Genre.all.each do |genre| %>
+        <a href="./tmp/_site/genres/<%= genre.name %>.html><%= genre.name %></a> <br>
+      <% end %>
+  </body>
+</html>

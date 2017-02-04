@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Song Index</title>
+  </head>
+  <body>
+    Songs: <br>
+    <% Song.all.each do |song| %>
+        <a href="./tmp/_site/songs/<%= song.name %>.html"><%= song.artist.name %> - <%= song.name %> - <%= song.genre.name %> </a><br>
+      <% end %>
+  </body>
+</html>
